@@ -1,5 +1,4 @@
 <?php
-
 	$title = "Add New Job";
 
 	if ( $_REQUEST["state"] == "addjob" ) {

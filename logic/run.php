@@ -1,4 +1,6 @@
 <?php
+	$title = "Run the Test Swarm";
+
 	require "inc/init.php";
 
 	$user = getItem("username", $_REQUEST, getItem("username", $_SESSION, ""));
@@ -14,8 +16,7 @@
 		$useragent_name = $row[0];
 	}
 
-	$title = "Run the Test Swarm";
-	$scripts = "";
+
 
 	if ( $client_id ) {
 		$scripts = "<script type='text/javascript'>var client_id = $client_id;</script>";
